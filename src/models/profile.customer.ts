@@ -6,8 +6,23 @@ import { Profile } from './profile.std.ts';
  */
 export class CustomerProfile extends Profile {
 
-    constructor(public isGuest = false) {
+    #payment_method: any;
+
+    /**
+     * 
+     * @param isGuest is customer a guess ?
+     */
+    constructor(public isGuest = true) {
         super();
     }
 
+
+    /**
+     * Adds payment method to profile
+     * @param method method of payment model
+     */
+    addPaymentMethod<T>(method: T): void {
+        this.#payment_method = method;
+    }
+    
 }
