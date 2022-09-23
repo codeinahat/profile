@@ -1,4 +1,4 @@
-import { Email } from './email.model.ts';
+import { Email } from '../src/models/email.model.ts';
 import { assertEquals } from 'https://deno.land/std/testing/asserts.ts'; 
 
 

@@ -1,4 +1,4 @@
-import { CustomerProfile } from './profile.customer.ts';
+import { CustomerProfile } from '../src/models/profile.customer.ts';
 import { assertEquals } from 'https://deno.land/std/testing/asserts.ts';
 
 

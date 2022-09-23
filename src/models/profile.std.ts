@@ -1,4 +1,5 @@
 import { Email } from './email.model.ts';
+import { Address } from './address.model.ts';
 
 /**
  * Standard profile
@@ -10,6 +11,9 @@ export class Profile {
     age: number | null = null;
     email: Email | null = null;
     phone: string | null = null;
+    address: Address | null = null;
+    addresses_list: Address[] = [];
+
 
     /**
      * Returns full name 

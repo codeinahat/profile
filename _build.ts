@@ -5,7 +5,7 @@ await emptyDir('./npm');
 
 
 await build({
-    entryPoints: ["./src"],
+    entryPoints: ["./src/mod.ts"],
     outDir: "./npm",
     shims: {
         deno: "dev"
@@ -13,7 +13,7 @@ await build({
     package: {
         name: "@codeinahat/profile",
         version: Deno.args[0],
-        description: "A profile SDK fro application development",
+        description: "A profile SDK for application development",
         license: "SEE LICENSE IN LICENSE"
     }
 })

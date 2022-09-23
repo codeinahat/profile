@@ -1,4 +1,4 @@
-import { Profile } from './profile.std.ts';
+import { Profile } from '../src/models/profile.std.ts';
 import { assertEquals } from 'https://deno.land/std/testing/asserts.ts';
 
 
